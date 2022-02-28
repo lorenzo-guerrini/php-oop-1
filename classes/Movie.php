@@ -1,5 +1,6 @@
 <?php
-class Movie {
+class Movie
+{
     private $title;
     private $genres;
 
@@ -9,23 +10,28 @@ class Movie {
         $this->genre = $_genre;
     }
 
-    public function getTitle(){
+    public function getTitle()
+    {
         return $this->title;
     }
 
-    public function setTitle($_title){
+    public function setTitle($_title)
+    {
         $this->title = $_title;
     }
 
-    public function getGenres(){
+    public function getGenres()
+    {
         return $this->genre;
     }
 
-    public function addGenre($_genre){
+    public function addGenre($_genre)
+    {
         array_push($this->genres, $_genre);
     }
 
-    public function getInfo() {
+    public function getInfo()
+    {
         return "{$this->title} {$this->genres}";
     }
 }

@@ -6,15 +6,18 @@ $peppa = new Movie("Peppa Pig", ["cartoon"]);
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <?php 
+    <?php
     echo $amelie->getInfo();
     echo $peppa->getInfo();
     ?>
 </body>
+
 </html>
