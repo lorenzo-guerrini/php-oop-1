@@ -4,10 +4,10 @@ class Movie
     private $title;
     private $genres;
 
-    public function __construct($_title, $_genre)
+    public function __construct($_title, $_genres)
     {
         $this->title = $_title;
-        $this->genre = $_genre;
+        $this->genres = $_genres;
     }
 
     public function getTitle()
@@ -22,16 +22,26 @@ class Movie
 
     public function getGenres()
     {
-        return $this->genre;
+        return $this->genres;
     }
 
-    public function addGenre($_genre)
+    public function addGenresArray($_genre)
     {
         array_push($this->genres, $_genre);
     }
 
+    public function getGenresString()
+    {
+        $output = "";
+        foreach ($this->genres as $genre) {
+            $output .= $genre . " ";
+        }
+        return $output;
+    }
+
     public function getInfo()
     {
-        return "{$this->title} {$this->genres}";
+        $genres = $this->getGenresString();
+        return "{$this->title} {$genres}";
     }
 }
