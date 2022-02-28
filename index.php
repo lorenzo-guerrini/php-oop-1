@@ -15,8 +15,7 @@ $peppa = new Movie("Peppa Pig", ["cartoon"]);
 
 <body>
     <?php
-    echo $amelie->getInfo();
-    echo $peppa->getInfo();
+    echo $amelie->getInfo() . "</br>" . $peppa->getInfo();
     ?>
 </body>
 
