@@ -25,14 +25,14 @@ class Movie
         return $this->genres;
     }
 
-    public function addGenresArray($_genre)
-    {
-        $this->genres[] = $_genre;
-    }
-
     public function getGenresString()
     {
         return implode(", ", $this->genres);
+    }
+
+    public function addGenresArray($_genre)
+    {
+        $this->genres[] = $_genre;
     }
 
     public function getInfo()
