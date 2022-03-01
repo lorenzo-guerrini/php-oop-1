@@ -32,11 +32,7 @@ class Movie
 
     public function getGenresString()
     {
-        $output = "";
-        foreach ($this->genres as $genre) {
-            $output .= $genre . " ";
-        }
-        return $output;
+        return implode(", ", $this->genres);
     }
 
     public function getInfo()
